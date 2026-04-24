@@ -5,6 +5,7 @@ type ComponentItem = {
   image: string;
 };
 
+// @ts-expect-error -- ../data/components is a JS module without type declarations
 import { components } from "../data/components";
 import { Card } from "./Card";
 import './Card.css';

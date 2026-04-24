@@ -1,4 +1,5 @@
 import { useParams } from "react-router";
+// @ts-expect-error -- JS data module has no declaration file
 import { components } from "../data/components";
 import "./DetailPage.css";
 import { Note } from "../components/Note";
@@ -6,7 +7,7 @@ import { Note } from "../components/Note";
 export function DetailPage() {
   const { slug } = useParams();
 
-  const component = components.find((c) => c.slug === slug);
+  const component = components.find((c: { slug: string }) => c.slug === slug);
 
   if (!component) {
     return <h1>Component not found</h1>;
@@ -33,11 +34,13 @@ export function DetailPage() {
         {component.specifications && component.specifications.length > 0 ? (
           <div className="specifications">
             <ul>
-              {component.specifications.map((spec, index) => (
+              {component.specifications.map(
+                (spec: { src: string; alt: string }, index: number) => (
                 <li key={index}>
                   <img src={spec.src} alt={spec.alt} />
                 </li>
-              ))}
+                )
+              )}
             </ul>
           </div>
         ) : (
