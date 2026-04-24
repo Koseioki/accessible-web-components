@@ -4,7 +4,7 @@
   --bg: #fff;
   --border: #e5e4e7;
   --code-bg: #f4f3ec;
-  --accent: #aa3bff;
+  --accent: #653bff;
   --accent-bg: rgba(170, 59, 255, 0.1);
   --accent-border: rgba(170, 59, 255, 0.5);
   --social-bg: rgba(244, 243, 236, 0.5);
@@ -16,7 +16,8 @@
   --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
   --mono: ui-monospace, Consolas, monospace;
 
-  font: 1.125rem/145% var(--sans);
+  font: 1.185rem/145% var(--sans);
+  line-height: 1.75;
   letter-spacing: 0.01125rem;
   color-scheme: light dark;
   color: var(--text);
@@ -54,18 +55,18 @@
 
 #root {
   /* width: 70.375rem; */
-  max-width: 100%;
+  /* max-width: 100%; */
   /* margin: 0 auto; */
   /* text-align: center; */
   /* border-inline: 0.0625rem solid var(--border); */
-  min-height: 100svh;
+  /* min-height: 100svh; */
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
 }
 
 body {
-  width: 100%;
+  /* width: 100%; */
   max-width: 60rem;
   margin: 0 auto;
   padding: 0 1rem;
@@ -98,6 +99,19 @@ h2 {
 }
 p {
   margin: 0;
+  margin-bottom: 2rem;
+  max-width: 50rem;
+}
+
+a{
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 0.0625rem solid transparent;
+  /* transition: 0.1s; */
+}
+
+a:hover {
+  border-bottom: 0.0625rem solid var(--accent);
 }
 
 code,

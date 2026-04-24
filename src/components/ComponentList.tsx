@@ -13,7 +13,7 @@ const typedComponents = components as ComponentItem[];
 
 export function ComponentList() {
   return (
-    <div>
+    <section>
       <h2 id="components">Components</h2>
 
       <ul className="card-list">
@@ -28,6 +28,6 @@ export function ComponentList() {
           </li>
         ))}
       </ul>
-    </div>
+    </section>
   );
 }

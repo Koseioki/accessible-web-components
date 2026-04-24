@@ -1,25 +1,37 @@
 ul.card-list {
-    display: flex;
-    gap: 2rem;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1rem;
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
 article.card {
-    display: flex;
+    cursor: pointer;
+    padding: 1rem;
+    /* display: flex;
     flex-direction: column;
     gap: 0.5rem;
     width: 100%;
     padding: 2rem;
     max-width: 20rem;
     border-radius: 1rem;
+    box-shadow: var(--shadow); */
+        transition: 0.1s;
+
+}
+
+article.card:hover {
     box-shadow: var(--shadow);
+    transform: scale(1.01);
+    transition: 0.1s;
 }
 
 .card img{
     width: 100%;
-    max-width: 10rem;
+    /* max-width: 10rem; */
     height: auto;
+    aspect-ratio: 1/1;
+    object-fit: contain;
 }

@@ -1,4 +1,5 @@
 import { NavLink } from "react-router";
+import { useNavigate } from "react-router";
 import "./Card.css";
 export function Card(
   title: string,
@@ -6,15 +7,15 @@ export function Card(
   image: string,
   slug: string,
 ) {
-
+  const navigate = useNavigate();
   const handleClick = () => {
-    window.location.href = `/${slug}`;
+    navigate(`/${slug}`);
   };
   return (
     <article className="card" onClick={handleClick}>
       <img src={image} alt="" />
       <h3>
-        <NavLink to={`/${slug}`}>{title}</NavLink>
+        <NavLink to={`/${slug}`} >{title}</NavLink>
       </h3>
       <p>{description}</p>
     </article>

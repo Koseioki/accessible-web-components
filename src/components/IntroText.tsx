@@ -1,10 +1,10 @@
-import heroImage from "../assets/accessible-components.webp";
+// import heroImage from "../assets/accessible-components.webp";
 
 export function IntroText() {
   return (
-    <div>
+    <section>
       <h2 id="about">About</h2>
-            <img src={heroImage} className="hero" aria-hidden="true" alt="" />
+            {/* <img src={heroImage} className="hero" aria-hidden="true" alt="" /> */}
 
         <p>
         These components were created for developers at{" "}
@@ -42,6 +42,6 @@ export function IntroText() {
         Each component includes a working demo and comprehensive specification
         documents for developers.
       </p>
-    </div>
+    </section>
   );
 }
