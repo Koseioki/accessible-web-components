@@ -1,6 +1,6 @@
 export function Footer() {
   return (
-    <footer className="centered">
+    <footer>
       <p>
         Created by Kosei Oki
         </p> 

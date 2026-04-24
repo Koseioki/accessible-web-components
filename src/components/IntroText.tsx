@@ -2,7 +2,7 @@
 
 export function IntroText() {
   return (
-    <section className="centered">
+    <section>
       <h2 id="about">About</h2>
             {/* <img src={heroImage} className="hero" aria-hidden="true" alt="" /> */}
 

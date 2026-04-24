@@ -10,10 +10,6 @@
     position: static;
     width: auto;
     height: auto;
-    /* margin: 1rem; */
-    /* padding: 0.5rem 1rem; */
-    /* background-color: var(--accent); */
-    /* color: var(--background); */
     z-index: 1001;
 }
 header{
@@ -22,7 +18,7 @@ header{
     padding: 1rem 0;
     align-items: center;
     justify-content: space-between;
-    position: sticky;
+    /* position: sticky; */
     top: 0;
     background-color: rgba(255, 255, 255, 0.75);
     backdrop-filter: blur(0.5rem);

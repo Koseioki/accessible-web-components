@@ -14,21 +14,21 @@ export function DetailPage() {
 
   return (
     <main id="main-content">
-      <section className="centered">
+      <section>
         <h1>{component.title}</h1>
-              <Note />
-        
+        <Note />
+
         <img src={component.image} alt="" className="component-image" />
         <p>{component.description}</p>
-
-        <a href={component.demo}>View Demo</a>
-        <a href={component.github}>
-          {/* <Icon icon="Github" fontSize="p"/> */}
-          View GitHub
-        </a>
+        <div>
+          <a href={component.demo}>View Demo</a>
+        </div>
+        <div>
+          <a href={component.github}>View GitHub</a>
+        </div>
       </section>
 
-      <section className="centered">
+      <section>
         <h2>Specifications</h2>
         {component.specifications && component.specifications.length > 0 ? (
           <div className="specifications">
