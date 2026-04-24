@@ -1,0 +1,27 @@
+.component-image {
+  width: 100%;
+  max-width: 20rem;
+  box-shadow: var(--shadow);
+  margin-bottom: 2rem;
+}
+
+.specifications ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.specifications li {
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+  padding: 2rem;
+}
+
+.specifications img {
+  width: 100%;
+  max-width: 50rem;
+  height: auto;
+}

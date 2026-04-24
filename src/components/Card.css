@@ -10,15 +10,7 @@ ul.card-list {
 article.card {
     cursor: pointer;
     padding: 1rem;
-    /* display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    width: 100%;
-    padding: 2rem;
-    max-width: 20rem;
-    border-radius: 1rem;
-    box-shadow: var(--shadow); */
-        transition: 0.1s;
+    transition: 0.1s;
 
 }
 
@@ -28,7 +20,19 @@ article.card:hover {
     transition: 0.1s;
 }
 
-.card img{
+article.card:has(a:focus-visible) {
+    outline: 0.125rem solid var(--accent);
+    outline-offset: 0.125rem;
+    transition: none;
+}
+
+article.card a:focus-visible,
+article.card:hover a {
+    outline: none;
+    border-bottom: 0.0625rem solid var(--accent);
+}
+
+.card img {
     width: 100%;
     /* max-width: 10rem; */
     height: auto;
