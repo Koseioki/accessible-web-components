@@ -1,4 +1,3 @@
-import heroImage from "../assets/accessible-components.webp";
 import { ComponentList } from "../components/ComponentList";
 import { IntroText } from "../components/IntroText";
 export function Home() {
@@ -6,10 +5,10 @@ export function Home() {
     <div>
       <h1>Accessible Web Components</h1>
       <p>By Kosei Oki</p>
-      <img src={heroImage} className="hero" aria-hidden="true" alt="" />
+
+      <ComponentList />
 
       <IntroText />
-      <ComponentList />
     </div>
   );
 }

@@ -1,7 +1,11 @@
+import heroImage from "../assets/accessible-components.webp";
 
 export function IntroText() {
   return (
     <div>
+      <h2 id="about">About</h2>
+            <img src={heroImage} className="hero" aria-hidden="true" alt="" />
+
         <p>
         These components were created for developers at{" "}
         <a href="https://www.bankdata.dk" className="plain-link">
