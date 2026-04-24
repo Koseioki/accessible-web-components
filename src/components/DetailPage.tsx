@@ -25,9 +25,9 @@ export function DetailPage() {
         {/* <Icon icon="Github" fontSize="p"/> */}
         View GitHub
       </a>
-
+<h2>Specifications</h2>
       {component.specifications && component.specifications.length > 0 ? (
-        <div>
+        <div className="specifications">
           <ul>
             {component.specifications.map((spec, index) => (
               <li key={index}>

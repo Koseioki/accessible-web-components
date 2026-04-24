@@ -1,3 +1,23 @@
+ul.card-list {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+article.card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 2rem;
+    max-width: 20rem;
+    border-radius: 1rem;
+    box-shadow: var(--shadow);
+}
+
 .card img{
     width: 100%;
     max-width: 10rem;

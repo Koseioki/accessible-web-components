@@ -7,6 +7,7 @@ type ComponentItem = {
 
 import { components } from "../data/components";
 import { Card } from "./Card";
+import './Card.css';
 
 const typedComponents = components as ComponentItem[];
 
@@ -15,7 +16,7 @@ export function ComponentList() {
     <div>
       <h2 id="components">Components</h2>
 
-      <ul>
+      <ul className="card-list">
         {typedComponents.map((component) => (
           <li key={component.slug}>
             {Card(
