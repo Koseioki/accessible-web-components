@@ -1,0 +1,19 @@
+header{
+    display: flex;
+    gap: 2rem;
+    padding: 2rem 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    gap: 2rem;
+}
