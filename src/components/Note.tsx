@@ -1,9 +1,11 @@
+import "./Note.css";
 export function Note() {
   return (
-    <div className="note">
+    <section className="note">
+        <span aria-hidden="true"></span>
       <p>
-        This project is a work in progress. More components and details will be added over time.
+        This project was originally made for internal use at <a href="https://www.bankdata.dk">Bankdata</a> and is kept here for reference. Some parts may be outdated, not meant for general use, or no longer follow current best practices.
       </p>
-    </div>
+    </section>
   );
 }

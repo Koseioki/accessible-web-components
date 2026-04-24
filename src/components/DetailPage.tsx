@@ -1,6 +1,7 @@
 import { useParams } from "react-router";
 import { components } from "../data/components";
 import "./DetailPage.css";
+import { Note } from "./Note";
 
 export function DetailPage() {
   const { slug } = useParams();
@@ -15,6 +16,8 @@ export function DetailPage() {
     <div>
       <section className="centered">
         <h1>{component.title}</h1>
+              <Note />
+        
         <img src={component.image} alt="" className="component-image" />
         <p>{component.description}</p>
 

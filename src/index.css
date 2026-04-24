@@ -111,12 +111,14 @@ p {
 a {
   color: var(--accent);
   text-decoration: none;
-  border-bottom: 0.0625rem solid transparent;
+    border-bottom: 0.0625rem solid var(--accent);
+
   /* transition: 0.1s; */
 }
 
 a:hover {
-  border-bottom: 0.0625rem solid var(--accent);
+    border-bottom: 0.0625rem solid transparent;
+
   transition: 0.1s;
 }
 

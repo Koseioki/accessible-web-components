@@ -1,0 +1,23 @@
+.note {
+    background: var(--accent-bg);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow);
+    color: var(--accent);
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    max-width: 50rem;
+    margin-bottom: 2rem;
+
+}
+
+.note p {
+    margin: 0;
+}
+
+.note span::before {
+    content: "ⓘ";
+    font-size: 1.5rem;
+    font-weight: bold;
+}
