@@ -2,6 +2,8 @@ import { NavLink } from "react-router";
 import './Header.css';
 export function Header() {
   return (
+    <>
+    <a href="#main-content" className="skip-link">Skip to main content</a>
     <header>
       <NavLink to="/">
         Accessible Web Components
@@ -17,5 +19,6 @@ export function Header() {
         </ul>
       </nav>
     </header>
+    </>
   );
 }

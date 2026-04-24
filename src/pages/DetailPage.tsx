@@ -1,7 +1,7 @@
 import { useParams } from "react-router";
 import { components } from "../data/components";
 import "./DetailPage.css";
-import { Note } from "./Note";
+import { Note } from "../components/Note";
 
 export function DetailPage() {
   const { slug } = useParams();
@@ -13,7 +13,7 @@ export function DetailPage() {
   }
 
   return (
-    <div>
+    <main id="main-content">
       <section className="centered">
         <h1>{component.title}</h1>
               <Note />
@@ -44,6 +44,6 @@ export function DetailPage() {
           <p>More details to follow.</p>
         )}
       </section>
-    </div>
+    </main>
   );
 }
