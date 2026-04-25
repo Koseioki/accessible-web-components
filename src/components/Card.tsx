@@ -6,6 +6,8 @@ export function Card(
   description: string,
   image: string,
   slug: string,
+  demo: string,
+  specifications: { src: string; alt: string }[]
 ) {
   const navigate = useNavigate();
   const handleClick = () => {
@@ -17,6 +19,12 @@ export function Card(
       <h3>
         <NavLink to={`/${slug}`} >{title}</NavLink>
       </h3>
+      {demo && (
+        <div className="card-label"><span aria-hidden="true">💻</span> Demo</div>
+      )}
+      {specifications  && (
+        <div className="card-label"><span aria-hidden="true">📄</span> Specifications</div>
+      )}
       <p>{description}</p>
     </article>
   );

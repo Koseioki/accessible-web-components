@@ -3,6 +3,8 @@ type ComponentItem = {
   title: string;
   description: string;
   image: string;
+  demo: string;
+  specifications: { src: string; alt: string }[];
 };
 
 // @ts-expect-error -- ../data/components is a JS module without type declarations
@@ -24,7 +26,9 @@ export function ComponentList() {
               component.title,
               component.description,
               component.image,
-              component.slug
+              component.slug,
+              component.demo,
+              component.specifications
             )}
           </li>
         ))}

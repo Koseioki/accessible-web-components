@@ -23,12 +23,16 @@ export function DetailPage() {
 
         <img src={component.image} alt="" className="component-image" />
         <p>{component.description}</p>
-        <div>
-          <a href={component.demo}>View Demo</a>
-        </div>
-        <div>
-          <a href={component.github}>View GitHub</a>
-        </div>
+        {component.demo && (
+          <div>
+            <a href={component.demo}>View Demo</a>
+          </div>
+        )}
+        {component.github && (
+          <div>
+            <a href={component.github}>View GitHub</a>
+          </div>
+        )}
       </section>
 
       <section>

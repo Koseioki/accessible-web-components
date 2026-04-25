@@ -39,3 +39,16 @@ article.card:hover a {
     aspect-ratio: 1/1;
     object-fit: contain;
 }
+
+.card-label {
+    /* position: absolute; */
+    display: inline-block;
+    background-color: var(--accent-bg);
+    color: var(--accent);
+    font-size: 0.75rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+}
