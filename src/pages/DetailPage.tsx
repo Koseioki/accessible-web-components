@@ -3,20 +3,22 @@ import { useParams } from "react-router";
 import { components } from "../data/components";
 import "./DetailPage.css";
 import { Note } from "../components/Note";
+import { H1 } from "../components/H1";
 
 export function DetailPage() {
   const { slug } = useParams();
 
   const component = components.find((c: { slug: string }) => c.slug === slug);
 
+
   if (!component) {
-    return <h1>Component not found</h1>;
+    return <H1>Component not found</H1>;
   }
 
   return (
     <main id="main-content">
       <section>
-        <h1>{component.title}</h1>
+        <H1>{component.title}</H1>
         <Note />
 
         <img src={component.image} alt="" className="component-image" />
