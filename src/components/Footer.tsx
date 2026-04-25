@@ -1,16 +1,13 @@
 import { NavLink } from "react-router";
-import './Footer.css';
+import "./Footer.css";
 
 export function Footer() {
   return (
     <footer>
       <p>
-       
-        <NavLink to="/">Accessible Web Components</NavLink> - 
-       
-        Created by Kosei Oki
-
-        </p> 
+        &copy; 2025 <NavLink to="/">Accessible Web Components</NavLink> - Created by Kosei
+        Oki
+      </p>
     </footer>
-    );
+  );
 }
