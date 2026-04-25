@@ -10,7 +10,7 @@ function App() {
       <Router basename={import.meta.env.BASE_URL}>
         <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route index element={<Home />} />
           <Route path="/:slug" element={<DetailPage />} />
         </Routes>
         <Footer />

@@ -11,13 +11,13 @@ export function Card(
 ) {
   const navigate = useNavigate();
   const handleClick = () => {
-    navigate(`/${slug}`);
+    navigate(slug);
   };
   return (
     <article className="card" onClick={handleClick}>
       <img src={image} alt="" />
       <h3>
-        <NavLink to={`/${slug}`} >{title}</NavLink>
+        <NavLink to={slug}>{title}</NavLink>
       </h3>
       {demo && (
         <div className="card-label"><span aria-hidden="true">💻</span> Demo</div>
