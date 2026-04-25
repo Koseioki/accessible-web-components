@@ -96,20 +96,22 @@ export const components = [
             { src: Forms9, alt: "The same requirements apply to checkboxes." }
         ]
     },
-    {
-        slug: "news-feed",
-        title: "News Feed (Carousel)",
-        image: NewsFeed,
-        demo: "https://koseioki.github.io/Nyhedsfeed/",
-        github: "https://github.com/Koseioki/Nyhedsfeed.git",
-        description: "A clickable news feed card with a carousel feature",
+
+        {
+        slug: "contact-card",
+        title: "Contact Card",
+        image: ContactCard,
+        demo: "https://koseioki.github.io/FMI/",
+        github: "https://github.com/Koseioki/FMI.git",
+        description: "A clickable card containing links",
         specifications: [
-            { src: Nyhedsfeed1, alt: "Structure: The entire card is an <article> element that is clickable using JavaScript. The <a> element is used only for the title, which is also inside an <h3>. When the <a> element is focused or the whole card is hovered over, the <h3> text should display an underline." },
-            { src: Nyhedsfeed2, alt: "Visual representation for both hover and focus states." },
-            { src: Nyhedsfeed3, alt: "Carousel: Include an aria-live=\"polite\" region that announces updates like “showing items 1 to 2.” Carousel control buttons should have descriptive aria-label attributes, such as “go to next slide.”" },
-            { src: Nyhedsfeed4, alt: "DOM order for the carousel should be: the aria-live region, back button, first <article>, second <article>, and then the next button." }
+            { src: Fmi1, alt: "The card list is marked up as a <ul>, with each card as an <li>. The name is an <a>, and the portrait must have an empty alt attribute." },
+            { src: Fmi2, alt: "When the whole card is hovered, the <a> receives an underline." },
+            { src: Fmi3, alt: "The same applies to the focus indicator." },
+            { src: Fmi4, alt: "For an individual card page, the same structure is used, but a <p> is used for the person’s name instead of an <a>." }
         ]
     },
+    
     {
         slug: "teaser-block",
         title: "Teaser Block",
@@ -124,20 +126,7 @@ export const components = [
         ]
     },
 
-    {
-        slug: "contact-card",
-        title: "Contact Card",
-        image: ContactCard,
-        demo: "https://koseioki.github.io/FMI/",
-        github: "https://github.com/Koseioki/FMI.git",
-        description: "A clickable card containing links",
-        specifications: [
-            { src: Fmi1, alt: "The card list is marked up as a <ul>, with each card as an <li>. The name is an <a>, and the portrait must have an empty alt attribute." },
-            { src: Fmi2, alt: "When the whole card is hovered, the <a> receives an underline." },
-            { src: Fmi3, alt: "The same applies to the focus indicator." },
-            { src: Fmi4, alt: "For an individual card page, the same structure is used, but a <p> is used for the person’s name instead of an <a>." }
-        ]
-    },
+
     {
         slug: "description-list-with-accordion",
         title: "Description List with Accordion",
@@ -180,6 +169,20 @@ export const components = [
             { src: Footer4, alt: "" },
             { src: Footer5, alt: "" },
             { src: Footer6, alt: "" }
+        ]
+    },
+    {
+        slug: "news-feed",
+        title: "News Feed (Carousel)",
+        image: NewsFeed,
+        demo: "https://koseioki.github.io/Nyhedsfeed/",
+        github: "https://github.com/Koseioki/Nyhedsfeed.git",
+        description: "A clickable news feed card with a carousel feature",
+        specifications: [
+            { src: Nyhedsfeed1, alt: "Structure: The entire card is an <article> element that is clickable using JavaScript. The <a> element is used only for the title, which is also inside an <h3>. When the <a> element is focused or the whole card is hovered over, the <h3> text should display an underline." },
+            { src: Nyhedsfeed2, alt: "Visual representation for both hover and focus states." },
+            { src: Nyhedsfeed3, alt: "Carousel: Include an aria-live=\"polite\" region that announces updates like “showing items 1 to 2.” Carousel control buttons should have descriptive aria-label attributes, such as “go to next slide.”" },
+            { src: Nyhedsfeed4, alt: "DOM order for the carousel should be: the aria-live region, back button, first <article>, second <article>, and then the next button." }
         ]
     }
 
