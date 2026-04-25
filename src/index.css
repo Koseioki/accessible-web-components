@@ -2,6 +2,7 @@
   --text: #6b6375;
   --text-h: #08060d;
   --bg: #fff;
+  --bg-transparent: rgba(255, 255, 255, 0.75);
   --border: #e5e4e7;
   --code-bg: #f4f3ec;
   --accent: #653bff;
@@ -37,6 +38,7 @@
     --text: #9ca3af;
     --text-h: #f3f4f6;
     --bg: #16171d;
+    --bg-transparent: rgba(22, 23, 29, 0.75);
     --border: #2e303a;
     --code-bg: #1f2028;
     --accent: #c084fc;
@@ -50,6 +52,10 @@
 
   #social .button-icon {
     filter: invert(1) brightness(2);
+  }
+
+  img {
+    filter: brightness(0.7);
   }
 }
 

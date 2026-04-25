@@ -1,0 +1,4 @@
+footer a{
+    color: var(--text);
+    border-color: var(--text);
+}

@@ -8,7 +8,7 @@ export function Header() {
       <NavLink to="/">
         Accessible Web Components
       </NavLink>
-      <nav>
+      {/* <nav>
         <ul>
           <li>
             <NavLink to="#components">Components</NavLink>
@@ -17,7 +17,7 @@ export function Header() {
             <NavLink to="#about">About</NavLink>
           </li>
         </ul>
-      </nav>
+      </nav> */}
     </header>
     </>
   );

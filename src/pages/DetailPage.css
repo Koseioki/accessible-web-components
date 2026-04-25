@@ -16,12 +16,19 @@
 
 .specifications li {
   border-radius: 1rem;
-  box-shadow: var(--shadow);
-  padding: 2rem;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  /* padding: 2rem; */
 }
 
 .specifications img {
   width: 100%;
-  max-width: 50rem;
-  height: auto;
+  /* max-width: 50rem; */
+    border-radius: 1rem;
+    margin: 0;
+    padding: 0;
+      box-shadow: var(--shadow);
+
+
 }
