@@ -5,8 +5,8 @@
   --bg-transparent: rgba(255, 255, 255, 0.75);
   --border: #e5e4e7;
   --code-bg: #f4f3ec;
-  --accent: #653bff;
-  --accent-bg: rgba(170, 59, 255, 0.1);
+  --accent: rgb(26, 91, 103);
+  --accent-bg: rgba(202, 231, 234, 0.5);
   --accent-border: rgba(170, 59, 255, 0.5);
   --social-bg: rgba(244, 243, 236, 0.5);
   --shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
@@ -140,15 +140,14 @@ section{
   margin-bottom: 2rem;
 }
 
-code,
-.counter {
+.code,
+code
+{
   font-family: var(--mono);
   display: inline-flex;
   border-radius: 0.25rem;
   color: var(--text-h);
-}
 
-code {
   font-size: 0.9375rem;
   line-height: 135%;
   padding: 0.25rem 0.5rem;
